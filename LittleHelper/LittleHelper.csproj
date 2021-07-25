@@ -174,7 +174,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -251,6 +250,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LittleHelper.Data\LittleHelper.Data.csproj">
+      <Project>{c657651a-9276-47a9-84dd-f2c81e59ee9b}</Project>
+      <Name>LittleHelper.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LittleHelper.Models\LittleHelper.Models.csproj">
+      <Project>{29814db6-e751-4278-8e91-d288ef92eee3}</Project>
+      <Name>LittleHelper.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LittleHelper.Services\LittleHelper.Services.csproj">
+      <Project>{5016994e-8e1d-45c1-8d84-ef364e33ef5e}</Project>
+      <Name>LittleHelper.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
