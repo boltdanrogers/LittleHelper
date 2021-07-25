@@ -35,6 +35,14 @@ namespace LittleHelper.Data
         //the various DbSets will be created here
         //we'll start with the one for our foodItem 
         public DbSet<FoodItem> FoodItems { get; set; }
+        //a dbset for recipe entries
+        public DbSet<RecipeEntry> RecipeEntries { get; set; }
+        //dbset for storage areas
+        public DbSet<StorageArea> StorageAreas { get; set; }
+        //dbset for recipe foods
+        public DbSet<RecipeFood> RecipeFoods { get; set; }
+        //dbset for storage foods
+        public DbSet<StorageFood> StorageFoods { get; set; }
 
 
         //an override method
