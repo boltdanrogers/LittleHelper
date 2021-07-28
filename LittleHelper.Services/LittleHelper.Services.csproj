@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FoodItemService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LittleHelper.Data\LittleHelper.Data.csproj">
+      <Project>{c657651a-9276-47a9-84dd-f2c81e59ee9b}</Project>
+      <Name>LittleHelper.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LittleHelper.Models\LittleHelper.Models.csproj">
+      <Project>{29814db6-e751-4278-8e91-d288ef92eee3}</Project>
+      <Name>LittleHelper.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
