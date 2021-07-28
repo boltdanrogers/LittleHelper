@@ -60,5 +60,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FoodItem\" />
+    <Folder Include="RecipeEntry\" />
+    <Folder Include="RecipeFood\" />
+    <Folder Include="StorageArea\" />
+    <Folder Include="StorageFood\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

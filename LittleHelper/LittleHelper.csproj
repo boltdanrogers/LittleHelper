@@ -171,6 +171,10 @@
     <Compile Include="Controllers\FoodItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RecipeEntryController.cs" />
+    <Compile Include="Controllers\RecipeFoodController.cs" />
+    <Compile Include="Controllers\StorageAreaController.cs" />
+    <Compile Include="Controllers\StorageFoodController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +243,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\FoodItem\" />
+    <Folder Include="Views\RecipeEntry\" />
+    <Folder Include="Views\RecipeFood\" />
+    <Folder Include="Views\StorageArea\" />
+    <Folder Include="Views\StorageFood\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
