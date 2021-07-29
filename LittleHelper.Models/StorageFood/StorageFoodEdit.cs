@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LittleHelper.Models.StorageFood
 {
-    class StorageFoodEdit
+    public class StorageFoodEdit
     {
     }
 }

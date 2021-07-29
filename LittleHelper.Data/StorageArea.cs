@@ -18,7 +18,7 @@ namespace LittleHelper.Data
     public class StorageArea
     {
         [Key]
-        public int StrorageId { get; set; }
+        public int StorageId { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]

@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LittleHelper.Models.RecipeEntry
+namespace LittleHelper.Models.FoodItem
 {
-    public class RecipeEntryListItem
+    public class FoodItemDetail
     {
-        public int RecipeId { get; set; }
+       
+        public int FoodId { get; set; }
+       
         public string Name { get; set; }
+       
+        public string Unit { get; set; }
 
     }//end of class
 }//end of name space

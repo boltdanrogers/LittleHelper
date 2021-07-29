@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LittleHelper.Models.FoodItem
 {
-    class FoodItemListItem
+    public class FoodItemListItem
     {
-    }
-}
+        public string Name { get; set; }
+
+    }//end of class
+}//end of name space

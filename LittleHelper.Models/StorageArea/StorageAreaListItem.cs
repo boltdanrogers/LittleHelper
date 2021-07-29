@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LittleHelper.Models.StorageArea
 {
-    class StorageAreaListItem
+    public class StorageAreaListItem
     {
-    }
-}
+        public int StorageId { get; set; }
+        public string Name { get; set; }
+        public bool Powered { get; set; }
+
+    }//end of class
+}//end of name space

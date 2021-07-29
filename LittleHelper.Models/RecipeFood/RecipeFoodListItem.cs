@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LittleHelper.Models.RecipeFood
 {
-    class RecipeFoodListItem
+    public class RecipeFoodListItem
     {
     }
 }
