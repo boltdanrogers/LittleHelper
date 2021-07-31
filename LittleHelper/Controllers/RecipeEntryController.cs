@@ -6,8 +6,11 @@ using System.Web.Mvc;
 
 namespace LittleHelper.Controllers
 {
+    [Authorize]
     public class RecipeEntryController : Controller
     {
+
+        //if possible make this method not need authorization
         // GET: RecipeEntry
         public ActionResult Index()
         {

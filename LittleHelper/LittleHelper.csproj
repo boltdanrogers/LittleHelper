@@ -239,10 +239,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\FoodItem\Index.cshtml" />
+    <Content Include="Views\FoodItem\Create.cshtml" />
+    <Content Include="Views\FoodItem\Details.cshtml" />
+    <Content Include="Views\FoodItem\Delete.cshtml" />
+    <Content Include="Views\FoodItem\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\FoodItem\" />
     <Folder Include="Views\RecipeEntry\" />
     <Folder Include="Views\RecipeFood\" />
     <Folder Include="Views\StorageArea\" />

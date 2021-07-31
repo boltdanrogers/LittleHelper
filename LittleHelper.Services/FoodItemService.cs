@@ -40,7 +40,7 @@ namespace LittleHelper.Services
             using (var ctx = new ApplicationDbContext())
             {
                 //create a query to be filled and returned
-                var query = ctx.FoodItems.Select(e => new FoodItemListItem { Name = e.Name });//our model is simple and the command 
+                var query = ctx.FoodItems.Select(e => new FoodItemListItem { Name = e.Name ,FoodId = e.FoodId});//our model is simple and the command 
 
                 return query.ToArray();
             }//end of using context
@@ -51,7 +51,6 @@ namespace LittleHelper.Services
 
         public FoodItemDetail GetFoodItemById(int id)
         {
-
             using (var ctx = new ApplicationDbContext())
             {
                 var entity = ctx.FoodItems.Single(e => e.FoodId == id);

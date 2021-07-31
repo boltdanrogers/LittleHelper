@@ -13,7 +13,7 @@ namespace LittleHelper.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202107252221084_initialMigration"; }
+            get { return "202107291947540_initialMigration"; }
         }
         
         string IMigrationMetadata.Source

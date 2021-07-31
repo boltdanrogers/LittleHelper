@@ -73,14 +73,14 @@ namespace LittleHelper.Data.Migrations
                 "dbo.StorageArea",
                 c => new
                     {
-                        StrorageId = c.Int(nullable: false, identity: true),
+                        StorageId = c.Int(nullable: false, identity: true),
                         Name = c.String(nullable: false),
                         Size = c.Int(nullable: false),
                         Powered = c.Boolean(nullable: false),
                         Spaces = c.Int(nullable: false),
                         SpaceNames = c.String(),
                     })
-                .PrimaryKey(t => t.StrorageId);
+                .PrimaryKey(t => t.StorageId);
             
             CreateTable(
                 "dbo.StorageFood",
