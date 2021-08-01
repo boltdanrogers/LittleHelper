@@ -10,7 +10,12 @@ namespace LittleHelper.Data
     //need an enum here for the size of the storage
     public enum Sizes
     {
-        small, medium, large
+        [Display(Name ="Small")]
+        small,
+        [Display(Name = "Medium")]
+        medium,
+        [Display(Name = "Large")]
+        large
     }//end of enum Sizes
 
 

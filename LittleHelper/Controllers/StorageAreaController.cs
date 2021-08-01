@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace LittleHelper.Controllers
 {
+    [Authorize]
     public class StorageAreaController : Controller
     {
         // get all
@@ -37,7 +38,7 @@ namespace LittleHelper.Controllers
             if (service.CreateStorageArea(model))
             {
                 TempData["SaveResult"] = "Your storage area was created";
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
 
             }//end of if created the storage area
             ModelState.AddModelError("", "Storage was not created");
@@ -83,7 +84,7 @@ namespace LittleHelper.Controllers
             if (service.UpdateStorageArea(model))
             {
                 TempData["SaveResult"] = "Your storage area was updated";
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
 
             }//end of if created the storage area
             ModelState.AddModelError("", "Storage was not updated");
@@ -114,7 +115,7 @@ namespace LittleHelper.Controllers
             service.DeleteStorageArea(id);
 
             TempData["SaveResult"] = "Your storage was deleted";
-            return RedirectToAction("index");
+            return RedirectToAction("Index");
 
         }//end of method deleteStorage
 

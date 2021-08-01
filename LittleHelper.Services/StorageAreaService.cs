@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace LittleHelper.Services
 {
+ 
     public class StorageAreaService
     {
         //crud

@@ -244,12 +244,20 @@
     <Content Include="Views\FoodItem\Details.cshtml" />
     <Content Include="Views\FoodItem\Delete.cshtml" />
     <Content Include="Views\FoodItem\Edit.cshtml" />
+    <Content Include="Views\RecipeEntry\Index.cshtml" />
+    <Content Include="Views\RecipeEntry\Create.cshtml" />
+    <Content Include="Views\RecipeEntry\Details.cshtml" />
+    <Content Include="Views\RecipeEntry\Edit.cshtml" />
+    <Content Include="Views\RecipeEntry\Delete.cshtml" />
+    <Content Include="Views\StorageArea\Index.cshtml" />
+    <Content Include="Views\StorageArea\Create.cshtml" />
+    <Content Include="Views\StorageArea\Details.cshtml" />
+    <Content Include="Views\StorageArea\Edit.cshtml" />
+    <Content Include="Views\StorageArea\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\RecipeEntry\" />
     <Folder Include="Views\RecipeFood\" />
-    <Folder Include="Views\StorageArea\" />
     <Folder Include="Views\StorageFood\" />
   </ItemGroup>
   <ItemGroup>

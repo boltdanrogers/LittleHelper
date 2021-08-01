@@ -60,7 +60,7 @@ namespace LittleHelper.Controllers
             {
 
                 TempData["SaveResult"] = "Your food was created";
-                return RedirectToAction("index");
+                return RedirectToAction("Index");
 
             }//end of if created food item
 
