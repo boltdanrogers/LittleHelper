@@ -11,7 +11,7 @@ namespace LittleHelper.Data
 public    class StorageFood
     {
         [Key]
-        public int FoodStoredId { get; set; }
+        public int StorageFoodId { get; set; }
         
         [ForeignKey(nameof(StorageArea))]
         public int StorageId { get; set; }

@@ -8,5 +8,12 @@ namespace LittleHelper.Models.StorageFood
 {
     public class StorageFoodDetails
     {
-    }
-}
+        public int StorageFoodId { get; set; }
+        public int StorageId { get; set; }
+        public int FoodId { get; set; }
+        public int Quantity { get; set; }
+        public string Unit { get; set; }
+    
+    }//end of class StorageFoodDetails
+
+}//end of name space

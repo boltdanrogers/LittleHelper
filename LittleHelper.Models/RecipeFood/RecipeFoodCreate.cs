@@ -8,5 +8,10 @@ namespace LittleHelper.Models.RecipeFood
 {
     public class RecipeFoodCreate
     {
-    }
-}
+        public int RecipeId { get; set; }
+        public int FoodId { get; set; }
+        public int Quantity { get; set; }
+        public string Unit { get; set; }
+
+    }//end of class recipeCreate
+}//end of name space
