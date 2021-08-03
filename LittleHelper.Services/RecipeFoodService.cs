@@ -57,7 +57,7 @@ namespace LittleHelper.Services
 
 
         //edit
-        public bool UpdateRecipeFood(RecipeFood model)
+        public bool UpdateRecipeFood(RecipeFoodEdit model)
         {
             using(var ctx = new ApplicationDbContext())
             {
