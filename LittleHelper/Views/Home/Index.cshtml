@@ -3,29 +3,42 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h2>Welcome to Little Helper</h2>
+    <p>A MVC 5 Application that uses Entity Framework and SQL to store food, recipes and storage ares.</p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">Add a Recipe</div>
+                <div class="card-text">
+                    This link will take you to create a new recipe.
+                </div>
+                @Html.ActionLink("Create Recipe", "Create", "RecipeEntry", null, new { @class = "btn btn-primary text-white" })
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">Add a Storage Area</div>
+                <div class="card-text">
+                    This link will take you to create a new storage area.
+                </div>
+                @Html.ActionLink("Create Storage", "Create", "StorageArea", null, new { @class = "btn btn-primary text-white" })
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">Add a Food Item</div>
+                <div class="card-text">
+                    This link will take you to create a new food.
+                </div>
+                @Html.ActionLink("Create Food", "Create", "FoodItem", null, new { @class = "btn btn-primary text-white" })
+            </div>
+        </div>
     </div>
 </div>

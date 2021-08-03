@@ -31,7 +31,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,7 +54,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FoodItem\FoodItemCreate.cs" />
+    <Compile Include="FoodItem\FoodItemDetail.cs" />
+    <Compile Include="FoodItem\FoodItemEdit.cs" />
+    <Compile Include="FoodItem\FoodItemListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeEntry\RecipeEntryCreate.cs" />
+    <Compile Include="RecipeEntry\RecipeEntryDetails.cs" />
+    <Compile Include="RecipeEntry\RecipeEntryEdit.cs" />
+    <Compile Include="RecipeEntry\RecipeEntryListItem.cs" />
+    <Compile Include="RecipeFood\RecipeFoodCreate.cs" />
+    <Compile Include="RecipeFood\RecipeFoodDetails.cs" />
+    <Compile Include="RecipeFood\RecipeFoodEdit.cs" />
+    <Compile Include="RecipeFood\RecipeFoodListItem.cs" />
+    <Compile Include="StorageArea\StorageAreaCreate.cs" />
+    <Compile Include="StorageArea\StorageAreaDetails.cs" />
+    <Compile Include="StorageArea\StorageAreaEdit.cs" />
+    <Compile Include="StorageArea\StorageAreaListItem.cs" />
+    <Compile Include="StorageFood\StorageFoodCreate.cs" />
+    <Compile Include="StorageFood\StorageFoodDetails.cs" />
+    <Compile Include="StorageFood\StorageFoodEdit.cs" />
+    <Compile Include="StorageFood\StorageFoodListItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LittleHelper.Data\LittleHelper.Data.csproj">
+      <Project>{c657651a-9276-47a9-84dd-f2c81e59ee9b}</Project>
+      <Name>LittleHelper.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

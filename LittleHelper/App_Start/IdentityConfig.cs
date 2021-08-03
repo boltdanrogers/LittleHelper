@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using LittleHelper.Models;
+using LittleHelper.Data;
 
 namespace LittleHelper
 {
@@ -54,10 +55,10 @@ namespace LittleHelper
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                RequireNonLetterOrDigit = false,//true,
+                RequireDigit = false,//true,
+                RequireLowercase = false,//true,
+                RequireUppercase = false,//true,
             };
 
             // Configure user lockout defaults

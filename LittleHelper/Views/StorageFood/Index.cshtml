@@ -1,0 +1,45 @@
+﻿@model IEnumerable<LittleHelper.Models.StorageFood.StorageFoodListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StorageFoodId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StorageId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StorageFoodId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StorageId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id= item.StorageFoodId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.StorageFoodId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.StorageFoodId })
+        </td>
+    </tr>
+}
+
+</table>

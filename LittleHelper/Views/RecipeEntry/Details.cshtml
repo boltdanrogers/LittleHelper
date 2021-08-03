@@ -1,0 +1,62 @@
+﻿@model LittleHelper.Models.RecipeEntry.RecipeEntryDetails
+
+@{
+    ViewBag.Title = "Details";
+    var recipe = Model.Instructions;
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RecipeEntryDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instructions)
+        </dt>
+
+        <dd>
+            @Html.Raw(recipe.Replace(",", "<br />"))
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cooked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cooked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cooled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cooled)
+        </dd>
+
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.RecipeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

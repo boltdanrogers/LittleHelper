@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using LittleHelper.Models;
+using LittleHelper.Data;
 
 namespace LittleHelper.Controllers
 {
