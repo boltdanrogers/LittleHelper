@@ -11,7 +11,7 @@ namespace LittleHelper.Models.StorageArea
     public class StorageAreaEdit
     {
         [Required]
-        public int StrorageId { get; set; }
+        public int StorageId { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]

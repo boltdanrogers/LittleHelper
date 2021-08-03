@@ -18,16 +18,18 @@
         <div class="form-group">
             @Html.LabelFor(model => model.StorageId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.StorageId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.StorageId, "", new { @class = "text-danger" })
+                @*Html.EditorFor(model => model.StorageId, new { htmlAttributes = new { @class = "form-control" } })*@
+                @*Html.ValidationMessageFor(model => model.StorageId, "", new { @class = "text-danger" })*@
+                @Html.DropDownList("StorageId",new SelectList(ViewBag.StorageAreaList,"StorageId",("Name")))
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.FoodId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FoodId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.FoodId, "", new { @class = "text-danger" })
+                @*Html.EditorFor(model => model.FoodId, new { htmlAttributes = new { @class = "form-control" } })*@
+                @*Html.ValidationMessageFor(model => model.FoodId, "", new { @class = "text-danger" })*@
+                @Html.DropDownList("FoodId", new SelectList(ViewBag.FoodItemList, "FoodId", ("Name")))
             </div>
         </div>
 

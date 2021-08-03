@@ -34,6 +34,15 @@ namespace LittleHelper.Data
         public int Spaces { get; set; }
         //[Required]
         public string SpaceNames { get; set; }
+        
+        public virtual ICollection<StorageFood> ListOfStorageFoods { get; set; }
+
+        public StorageArea()
+        {
+            ListOfStorageFoods = new HashSet<StorageFood>();
+
+        }
+
 
     }//end of class Storage Area
 }//end of name space

@@ -32,7 +32,7 @@
         </dt>
 
         <dd>
-            @Html.Raw(recipe.Replace(",","<br />"))
+            @Html.Raw(recipe.Replace(",", "<br />"))
         </dd>
 
         <dt>
@@ -51,9 +51,12 @@
             @Html.DisplayFor(model => model.Cooled)
         </dd>
 
+
+
+
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id=Model.RecipeId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

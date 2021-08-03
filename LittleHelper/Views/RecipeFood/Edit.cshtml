@@ -10,26 +10,29 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>RecipeFoodEdit</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model=>model.RecipeFoodId)
+        @Html.HiddenFor(model => model.RecipeFoodId)
 
         <div class="form-group">
             @Html.LabelFor(model => model.RecipeId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.RecipeId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.RecipeId, "", new { @class = "text-danger" })
+                @*Html.EditorFor(model => model.RecipeId, new { htmlAttributes = new { @class = "form-control" } })*@
+                @*Html.ValidationMessageFor(model => model.RecipeId, "", new { @class = "text-danger" })*@
+                @Html.DropDownList("RecipeId", new SelectList(ViewBag.RecipeEntryList, "RecipeId", ("Name")))
+
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.FoodId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FoodId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.FoodId, "", new { @class = "text-danger" })
+                @*Html.EditorFor(model => model.FoodId, new { htmlAttributes = new { @class = "form-control" } })*@
+                @*Html.ValidationMessageFor(model => model.FoodId, "", new { @class = "text-danger" })*@
+                @Html.DropDownList("FoodId", new SelectList(ViewBag.FoodItemList, "FoodId", ("Name")))
             </div>
         </div>
 

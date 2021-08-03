@@ -13,6 +13,8 @@ namespace LittleHelper.Models.StorageFood
         public int FoodId { get; set; }
         public int Quantity { get; set; }
         public string Unit { get; set; }
+
+        public LittleHelper.Data.FoodItem FoodItem { get; set; }
     
     }//end of class StorageFoodDetails
 

@@ -23,7 +23,11 @@ namespace LittleHelper.Controllers
         //get create
         public ActionResult Create()
         {
+            //the lists for our dropdown menu
+            ViewBag.FoodItemList = new FoodItemService().GetFoodItems();
 
+            ViewBag.StorageAreaList = new StorageAreaService().GetStorageAreas();
+            
             return View();
         }
 

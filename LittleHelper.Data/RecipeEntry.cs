@@ -19,6 +19,15 @@ namespace LittleHelper.Data
         public bool Cooked { get; set; }
         //[Required]
         public bool Cooled { get; set; }
+
+        public ICollection<RecipeFood> ListOfRecipeFoods { get; set; }
+
+
+        public RecipeEntry()
+        {
+            ListOfRecipeFoods = new HashSet<RecipeFood>();
+
+        }
     
     }//end of class RecipeEntry
 }//end of name space
