@@ -33,13 +33,13 @@ namespace LittleHelper.Data.Migrations
                 "dbo.RecipeFood",
                 c => new
                     {
-                        FoodNeededId = c.Int(nullable: false, identity: true),
+                        RecipeFoodId = c.Int(nullable: false, identity: true),
                         RecipeId = c.Int(nullable: false),
                         FoodId = c.Int(nullable: false),
                         Quantity = c.Int(nullable: false),
                         Unit = c.String(),
                     })
-                .PrimaryKey(t => t.FoodNeededId)
+                .PrimaryKey(t => t.RecipeFoodId)
                 .ForeignKey("dbo.FoodItem", t => t.FoodId, cascadeDelete: true)
                 .ForeignKey("dbo.RecipeEntry", t => t.RecipeId, cascadeDelete: true)
                 .Index(t => t.RecipeId)
@@ -86,13 +86,13 @@ namespace LittleHelper.Data.Migrations
                 "dbo.StorageFood",
                 c => new
                     {
-                        FoodStoredId = c.Int(nullable: false, identity: true),
+                        StorageFoodId = c.Int(nullable: false, identity: true),
                         StorageId = c.Int(nullable: false),
                         FoodId = c.Int(nullable: false),
                         Quantity = c.Int(nullable: false),
                         Unit = c.String(),
                     })
-                .PrimaryKey(t => t.FoodStoredId)
+                .PrimaryKey(t => t.StorageFoodId)
                 .ForeignKey("dbo.FoodItem", t => t.FoodId, cascadeDelete: true)
                 .ForeignKey("dbo.StorageArea", t => t.StorageId, cascadeDelete: true)
                 .Index(t => t.StorageId)

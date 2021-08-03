@@ -1,0 +1,58 @@
+﻿@model LittleHelper.Models.StorageFood.StorageFoodDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StorageFoodDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StorageFoodId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StorageFoodId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodItem.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodItem.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unit)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

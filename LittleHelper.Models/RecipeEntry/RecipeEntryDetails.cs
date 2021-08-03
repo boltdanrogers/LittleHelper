@@ -20,6 +20,7 @@ namespace LittleHelper.Models.RecipeEntry
         //[Required]
         public bool Cooled { get; set; }
 
+        public ICollection<LittleHelper.Data.RecipeFood> ListOfRecipeFoods { get; set; }
 
     }//end of class
 }//end of name space

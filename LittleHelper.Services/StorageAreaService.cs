@@ -29,7 +29,7 @@ namespace LittleHelper.Services
         }//end of method CreateStorageArea
 
         //get all
-        public IEnumerable<StorageAreaListItem> GetStorageItems()
+        public IEnumerable<StorageAreaListItem> GetStorageAreas()
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -62,7 +62,7 @@ namespace LittleHelper.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = ctx.StorageAreas.Single(e => e.StorageId == model.StrorageId);
+                var entity = ctx.StorageAreas.Single(e => e.StorageId == model.StorageId);
 
                 entity.Name = model.Name;
                 entity.Size = model.Size;

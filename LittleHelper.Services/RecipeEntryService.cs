@@ -48,7 +48,7 @@ namespace LittleHelper.Services
             {
                 var entity = ctx.RecipeEntries.Single(e => e.RecipeId == id);
 
-                return new RecipeEntryDetails { RecipeId = entity.RecipeId, Name = entity.Name, Instructions = entity.Instructions, Cooked = entity.Cooked, Cooled = entity.Cooled };
+                return new RecipeEntryDetails { RecipeId = entity.RecipeId, Name = entity.Name, Instructions = entity.Instructions, Cooked = entity.Cooked, Cooled = entity.Cooled, ListOfRecipeFoods = entity.ListOfRecipeFoods};
 
             }//end of using context
 

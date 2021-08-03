@@ -15,7 +15,7 @@ namespace LittleHelper.Controllers
         public ActionResult Index()
         {
             var service = new StorageAreaService();
-            var model = service.GetStorageItems();
+            var model = service.GetStorageAreas();
 
             return View(model);
 
@@ -61,7 +61,7 @@ namespace LittleHelper.Controllers
         {
             var service = new StorageAreaService();
             var detail = service.GetStorageAreaById(id);
-            var model = new StorageAreaEdit { StrorageId = detail.StorageId, Name = detail.Name, Size = detail.Size, Powered = detail.Powered, Spaces = detail.Spaces, SpaceNames = detail.SpaceNames };
+            var model = new StorageAreaEdit { StorageId = detail.StorageId, Name = detail.Name, Size = detail.Size, Powered = detail.Powered, Spaces = detail.Spaces, SpaceNames = detail.SpaceNames };
             return View(model);
 
         }//end of get edit
@@ -73,7 +73,7 @@ namespace LittleHelper.Controllers
         {
             if (!ModelState.IsValid) return View(model);
 
-            if (model.StrorageId != id)
+            if (model.StorageId != id)
             {
                 ModelState.AddModelError("", "ID mismatch");
                 return View(model);
