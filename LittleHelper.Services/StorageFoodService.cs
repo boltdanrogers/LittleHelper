@@ -37,7 +37,7 @@ namespace LittleHelper.Services
 
 
         //get one
-        public StorageFoodDetails GetStoraegFoodById(int id)
+        public StorageFoodDetails GetStorageFoodById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {

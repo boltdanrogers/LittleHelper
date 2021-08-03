@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace LittleHelper.Controllers
 {
+    [Authorize]
     public class RecipeFoodController : Controller
     {
         // GET: RecipeFood

@@ -259,10 +259,14 @@
     <Content Include="Views\RecipeFood\Details.cshtml" />
     <Content Include="Views\RecipeFood\Edit.cshtml" />
     <Content Include="Views\RecipeFood\Delete.cshtml" />
+    <Content Include="Views\StorageFood\Index.cshtml" />
+    <Content Include="Views\StorageFood\Create.cshtml" />
+    <Content Include="Views\StorageFood\Details.cshtml" />
+    <Content Include="Views\StorageFood\Edit.cshtml" />
+    <Content Include="Views\StorageFood\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\StorageFood\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
