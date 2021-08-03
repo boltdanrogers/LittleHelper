@@ -56,9 +56,9 @@
   <ItemGroup>
     <Compile Include="FoodItem.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202107291947540_initialMigration.cs" />
-    <Compile Include="Migrations\202107291947540_initialMigration.Designer.cs">
-      <DependentUpon>202107291947540_initialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202108031323374_initialMigration.cs" />
+    <Compile Include="Migrations\202108031323374_initialMigration.Designer.cs">
+      <DependentUpon>202108031323374_initialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202107291947540_initialMigration.resx">
-      <DependentUpon>202107291947540_initialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202108031323374_initialMigration.resx">
+      <DependentUpon>202108031323374_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
