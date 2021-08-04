@@ -29,9 +29,9 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.RecipeId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.RecipeId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.RecipeId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.RecipeId }, new { @class = "btn btn-success" }) 
+            @Html.ActionLink("Details", "Details", new { id = item.RecipeId }, new { @class = "btn btn-info" }) 
+            @Html.ActionLink("Delete", "Delete", new { id = item.RecipeId }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

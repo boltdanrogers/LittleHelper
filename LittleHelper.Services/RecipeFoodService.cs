@@ -46,12 +46,10 @@ namespace LittleHelper.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = ctx.RecipeFoods.SingleOrDefault(e => e.FoodId == id);
-                if(entity != null)
-                { 
+                var entity = ctx.RecipeFoods.Single(e => e.RecipeFoodId == id);
+                 
                 return new RecipeFoodDetails { RecipeFoodId = entity.RecipeFoodId, FoodId = entity.FoodId, RecipeId = entity.RecipeId, Quantity = entity.Quantity, Unit = entity.Unit };
-                }
-                return null;
+                
 
             }//end of using context
 

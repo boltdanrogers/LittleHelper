@@ -1,5 +1,4 @@
 ﻿using LittleHelper.Models.RecipeFood;
-using LittleHelper.Models.StorageFood;
 using LittleHelper.Services;
 using System;
 using System.Collections.Generic;
@@ -68,6 +67,11 @@ namespace LittleHelper.Controllers
         //get edit
         public ActionResult Edit(int id)
         {
+            //create the lists for our dropdown menus 
+            ViewBag.FoodItemList = new FoodItemService().GetFoodItems();
+
+            ViewBag.RecipeEntryList = new RecipeEntryService().GetRecipeEntries();
+
             var service = new RecipeFoodService();
             var detail = service.GetRecipeFoodById(id);
             var model = new RecipeFoodEdit { RecipeFoodId = detail.RecipeFoodId, FoodId = detail.FoodId, RecipeId = detail.RecipeId, Quantity = detail.Quantity, Unit = detail.Unit };
