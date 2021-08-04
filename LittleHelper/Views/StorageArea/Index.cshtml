@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.Powered)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.StorageId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.StorageId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.StorageId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.StorageId }, new { @class = "btn btn-success" }) 
+            @Html.ActionLink("Details", "Details", new { id = item.StorageId }, new { @class = "btn btn-info" }) 
+            @Html.ActionLink("Delete", "Delete", new { id = item.StorageId }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

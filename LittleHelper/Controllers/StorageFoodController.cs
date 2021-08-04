@@ -66,6 +66,11 @@ namespace LittleHelper.Controllers
         //get edit
         public ActionResult Edit(int id)
         {
+            //the lists for our dropdown menu
+            ViewBag.FoodItemList = new FoodItemService().GetFoodItems();
+
+            ViewBag.StorageAreaList = new StorageAreaService().GetStorageAreas();
+
             var service = new StorageFoodService();
             var detail = service.GetStorageFoodById(id);
             var model = new StorageFoodEdit { StorageFoodId = detail.StorageFoodId, FoodId = detail.FoodId, StorageId = detail.StorageId, Quantity = detail.Quantity, Unit = detail.Unit };

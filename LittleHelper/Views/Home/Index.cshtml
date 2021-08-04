@@ -7,9 +7,9 @@
     <p>A MVC 5 Application that uses Entity Framework and SQL to store food, recipes and storage ares.</p>
 </div>
 
-<div class="row">
+<div class="row" style="margin-bottom:25px;">
     <div class="col-md-4">
-        <div class="card">
+        <div class="card" style="background-color:cornsilk;padding:15px;">
             <div class="card-body">
                 <div class="card-title">Add a Recipe</div>
                 <div class="card-text">
@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card">
+        <div class="card" style="background-color:cornsilk;padding:15px;">
             <div class="card-body">
                 <div class="card-title">Add a Storage Area</div>
                 <div class="card-text">
@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card">
+        <div class="card" style="background-color:cornsilk;padding:15px;">
             <div class="card-body">
                 <div class="card-title">Add a Food Item</div>
                 <div class="card-text">
@@ -41,4 +41,29 @@
             </div>
         </div>
     </div>
+</div>
+<div class="row">
+    <div class="col-md-3 col-md-offset-2">
+        <div class="card" style="background-color:floralwhite;padding:15px;">
+            <div class="card-body">
+                <div class="card-title">Add a Food to a Recipe</div>
+                <div class="card-text">
+                    This link will take you to add an existing food to an existing recipe.
+                </div>
+                @Html.ActionLink("Create Recipe", "Create", "RecipeFood", null, new { @class = "btn btn-primary text-white" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-md-offset-2">
+        <div class="card" style="background-color:floralwhite;padding:15px;">
+            <div class="card-body">
+                <div class="card-title">Add a Food to a Storage Area</div>
+                <div class="card-text">
+                    This link will take you to add an existing food to an existing storage area.
+                </div>
+                @Html.ActionLink("Create Storage", "Create", "StorageFood", null, new { @class = "btn btn-primary text-white" })
+            </div>
+        </div>
+    </div>
+
 </div>

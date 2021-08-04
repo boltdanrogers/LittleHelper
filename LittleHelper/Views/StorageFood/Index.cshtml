@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.FoodId)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id= item.StorageFoodId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.StorageFoodId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.StorageFoodId })
+            @Html.ActionLink("Edit", "Edit", new { id= item.StorageFoodId }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Details", "Details", new { id = item.StorageFoodId }, new { @class = "btn btn-info" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.StorageFoodId }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

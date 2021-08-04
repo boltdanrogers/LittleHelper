@@ -43,7 +43,7 @@ namespace LittleHelper.Services
             {
 
                 var entity = ctx.StorageFoods.Single(e => e.StorageFoodId == id);
-                return new StorageFoodDetails { StorageFoodId = entity.StorageFoodId, StorageId = entity.StorageId, FoodId = entity.FoodId, Quantity = entity.Quantity, Unit = entity.Unit };
+                return new StorageFoodDetails { StorageFoodId = entity.StorageFoodId, StorageId = entity.StorageId, FoodId = entity.FoodId, Quantity = entity.Quantity, Unit = entity.Unit, FoodItem = entity.FoodItem };
 
             }//end of using context
 

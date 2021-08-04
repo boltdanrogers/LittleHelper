@@ -97,8 +97,8 @@ namespace LittleHelper.Controllers
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {
-            var service = new FoodItemService();
-            var model = service.GetFoodItemById(id);
+            var service = new StorageAreaService();
+            var model = service.GetStorageAreaById(id);
             return View(model);
 
         }//end of get method delete
